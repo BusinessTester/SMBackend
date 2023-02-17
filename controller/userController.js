@@ -42,7 +42,7 @@ else{
 
         // const url = `http://localhost:5000/api/confirmuser/${token.token}`
 //         const url =    `http://localhost:3000/confirmation/${token.token}`
-         const url = `https://starlit-cucurucho-119636.netlify.app/${token.token}`
+         const url = `https://starlit-cucurucho-119636.netlify.app/confirmation/${token.token}`
 
         // next is the sending of the email
         sendingEmail({
