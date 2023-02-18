@@ -42,7 +42,8 @@ else{
 
         // const url = `http://localhost:5000/api/confirmuser/${token.token}`
 //         const url =    `http://localhost:3000/confirmation/${token.token}`
-         const url = `https://starlit-cucurucho-119636.netlify.app/confirmation/${token.token}`
+//          const url = `https://starlit-cucurucho-119636.netlify.app/confirmation/${token.token}`
+       const url = `https://voluble-malabi-06f128.netlify.app/confirmation/${token.token}`
 
         // next is the sending of the email
         sendingEmail({
@@ -103,7 +104,8 @@ exports.resendconfirmation = async(req,res)=>{
     if(!token) return res.status(400).json({error:"there was an error while saving the token"})
 
     // const url = `http://localhost:5000/api/confirmuser/${token.token}`
-    const url =    `http://localhost:3000/confirmation/${token.token}`
+//     const url =    `http://localhost:3000/confirmation/${token.token}`
+    const url = `https://voluble-malabi-06f128.netlify.app/confirmation/${token.token}`
 
 
     // next is the sending of the email
@@ -181,7 +183,8 @@ if(!token) return res.status(400).json({error:"the token could not be saved "})
 
 
 // const url = `http://localhost:5000/api/confirmuser/${token.token}`
-const url =    `http://localhost:3000/resetpassword/${token.token}`
+// const url =    `http://localhost:3000/resetpassword/${token.token}`
+const url = `https://voluble-malabi-06f128.netlify.app/resetpassword/${token.token}`
 
 
     // next is the sending of the email
