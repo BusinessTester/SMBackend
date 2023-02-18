@@ -50,7 +50,7 @@ else{
             to:new_user.email,
             subject: `email verification`,
             text: ` please click on the button below for the account verification`,
-            html:`<a href=${url}><button>click here to verify email</button></a>`
+            html:`<a href=${url} target='_blank' rel='noreferrer'><button>click here to verify email</button></a>`
         })
         res.send(new_user)
     }
