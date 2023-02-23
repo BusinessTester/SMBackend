@@ -48,7 +48,7 @@ else{
 
         // next is the sending of the email
         sendingEmail({
-            from:"businesstester945@gmail.com",
+            from:"studymaterialsnepal@gmail.com",
             to:new_user.email,
             subject: `email verification`,
             text: ` please click on the button below for the account verification`,
@@ -112,7 +112,7 @@ exports.resendconfirmation = async(req,res)=>{
 
     // next is the sending of the email
     sendingEmail({
-        from:"businesstester945@gmail.com",
+        from:"studymaterialsnepal@gmail.com",
         to:user.email,
         subject: `email verification`,
         text: ` please click on the button below for the account verification`,
@@ -195,7 +195,7 @@ const url =    `http://localhost:3000/resetpassword/${token.token}`
 
     // next is the sending of the email
     sendingEmail({
-        from:"businesstester945@gmail.com",
+        from:"studymaterialsnepal@gmail.com",
         to:user.email,
         subject: `email verification for resetting the password`,
         text: ` please click on the button below for the account verification`,
@@ -324,7 +324,7 @@ exports.makeRequest = async(req,res)=>{
 // const {emailhtml} = req.body
 
        await sendingEmail({
-            from:"businesstester945@gmail.com",
+            from:"studymaterialsnepal@gmail.com",
             to:user.email,
             subject: `email information for ${user.email}`,
             // subject: await req.body.subject,
