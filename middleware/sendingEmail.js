@@ -8,10 +8,11 @@ var transport = nodemailer.createTransport({
   service:"gmail",
   auth: {
 
-    user: "businesstester945@gmail.com",
-    pass: "shfyjflsblebmcci"
+//     user: "businesstester945@gmail.com",
+//     pass: "shfyjflsblebmcci"
   
-
+    user: "studymaterialsnepal@gmail.com",
+    pass: "xtfvvdnkzchnskpg"
 }
     // host: "smtp.mailtrap.io",
     // this will be changed to outlook or gmail in the later stages
