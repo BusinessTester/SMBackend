@@ -1,5 +1,5 @@
 const express = require("express")
-const { addingUser, confirmUser, resendconfirmation, signin, signout, forgottenpassword, resetpassword, deleteuser, listusers, showPurchases, addPurchases, updatePurchases, makeRequest } = require("../controller/userController")
+const { addingUser, confirmUser, resendconfirmation, signin, signout, forgottenpassword, resetpassword, deleteuser, listusers, showPurchases, addPurchases, updatePurchases, makeRequest, specificUser } = require("../controller/userController")
 const { userValidationSchema, validation, signValidationSchema, forgotValidationSchema } = require("../validation/validator")
 
 
