@@ -20,6 +20,8 @@ router.post('/addpurchases/:id',addPurchases)
 router.post('/sendingemail/:id',makeRequest)
 
 router.get("/listusers",listusers)
+router.get("/listspecificuser/:id",specificUser)
+
 
 router.delete("/deleteuser/:id",deleteuser)
 
