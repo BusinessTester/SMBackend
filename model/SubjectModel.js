@@ -12,7 +12,7 @@ const SubjectModelSchema = mongoose.Schema({
     price:{
 
         type:Number,
-        default:"NA"
+        default:0
     
     },
     field:{
