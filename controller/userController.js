@@ -353,3 +353,12 @@ exports.makeRequest = async(req,res)=>{
     }
 
 }
+
+
+exports.specificUser = async(req,res)=>{
+    let user = await User.findById(req.params.id)
+
+    if(!user) return res.status(400).json({error:"the searched user cannot be found"})
+    res.send(user)
+
+}
