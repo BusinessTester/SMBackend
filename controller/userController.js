@@ -12,7 +12,7 @@ const { findByIdAndRemove } = require("../model/UserModel")
 
 
 // this is to make it easy to insert the urls going further 
-const API = `https://majestic-flan-c943fa.netlify.app`
+const API = `https://dynamic-medovik-7e5f83.netlify.app`
 
 exports.addingUser = async(req,res)=>{
 let user = await User.findOne({email:req.body.email})
