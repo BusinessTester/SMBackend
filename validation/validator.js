@@ -12,7 +12,7 @@ exports.userValidationSchema = [
     
     
     check('email',"email is required").notEmpty()
-    .isEmail().withMessage("the entered email is too short"),
+    .isEmail().withMessage("please enter a valid email"),
 
     check('username',"username is required").notEmpty()
     .isLength({min:3}).withMessage("the entered username should be more than 3 characters long"),
