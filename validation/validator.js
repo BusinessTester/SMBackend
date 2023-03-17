@@ -22,8 +22,8 @@ exports.userValidationSchema = [
     .isNumeric().withMessage("the entered age is not a number"),
 
     check('password',"password is required").notEmpty()
-    .isLength({min:6}).withMessage("the entered password must be 6 to 12 characters long")
-    .isLength({max:12}).withMessage("the entered password must be 6 to 12 characters long"),
+    .isLength({min:6}).withMessage("the entered password must be 6 to 32 characters long")
+    .isLength({max:32}).withMessage("the entered password must be 6 to 32 characters long"),
 // i can put matches method for lowercase,uppercase and alphanumeric numbers but i have not put them here
     check("phone","phone number is required").notEmpty()
     .isMobilePhone().withMessage("the entered phone number is invalid. It should be 10 digits")
